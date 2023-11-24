@@ -4,10 +4,17 @@ import CardWrapper from '@/app/ui/dashboard/cards';
 import { CardsSkeleton, RevenueChartSkeleton, LatestInvoicesSkeleton } from '@/app/ui/skeletons';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
+import { CenterBox } from '@/app/ui/styled-components';
  
 export default async function Page() {
   return (
     <main>
+      <h1 className={`${lusitana.className} mt-6 mb-4 text-xl md:text-2xl`}>
+        Testing area
+      </h1>
+      <div className='mb-20'>
+        <CenterBox />
+      </div>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>
